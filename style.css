@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(217, 54%, 11%);
+    min-height: 100vh;
+}
+
+.content {
+    background: hsl(216, 50%, 16%);
+    width: 30rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+}
+
+div.main-img {
+    display: flex;
+    border-radius: 5%;
+    height: 26rem;
+    background-image: url("./images/image-equilibrium.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-img:hover > .main-img-hover {
+    cursor: pointer;
+    display: flex;
+}
+
+.main-img-hover {
+    flex: 1;
+    border-radius: 5%;
+    display: none;
+    background: hsl(178, 100%, 50%, 0.55);
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 1.5rem 0;
+}
+
+p {
+    font-size: 1.5rem;
+    color: hsl(215, 51%, 70%);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+p.desc {
+    margin-bottom: 1.5rem
+}
+
+div.by {
+    display: flex;
+    flex: row;
+    align-items: center;
+}
+
+div.subs {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    border-bottom: .18rem solid hsl(215, 32%, 27%);
+}
+
+img.autor {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: .05rem solid white;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+p > a {
+    color: white;
+    font-size: 1.3rem;
+}
+
+p.autor {
+    font-size: 1.3rem;
+}
+
+img.icon {
+    width: fit-content;
+    height: fit-content;
+    margin-right: .5rem;
+}
+
+p.est {
+    color: hsl(178, 100%, 50%);
+}
+
+div.est,.days {
+    display: flex;
+    justify-content: center;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
